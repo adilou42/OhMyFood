@@ -12,16 +12,24 @@
 </head>
 <body>
     <header class="header-menu">
-        <a href="/">
-            <i class="fa-solid fa-arrow-left"></i>
-            <img src="./assets/logo/ohmyfood.png" />
-        </a>
+        <div class="back">
+            <a href="/">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <a href="/" class="back-logo">
+                <img src="./assets/logo/ohmyfood.png" />
+            </a>
+        </div>
         <img class="menu-photo" src="./assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" />
     </header>
     <section class="menu">
         <div class="menu-title">
             <h1>La note enchantée</h1>
-            <i class="fa-regular fa-heart"></i>
+            <label class="trigger">
+                <input type="checkbox" class="checkbox checkbox--red" />
+                <i class="fa-regular fa-heart"></i>
+                <img src="./assets/Like.svg" />
+            </label>
         </div>
         <article class="entre">
             <h3>ENTRÉES</h3>

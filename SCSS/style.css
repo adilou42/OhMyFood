@@ -4,6 +4,10 @@ body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+h3 {
+  font-weight: 300;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -132,9 +136,7 @@ header img {
   position: absolute;
   right: 14px;
   background-color: white;
-}
-.legend i:hover {
-  opacity: 0;
+  visibility: visible;
 }
 .legend p {
   margin-top: -12px;
@@ -142,6 +144,17 @@ header img {
 .legend img {
   width: 22px;
   height: 21px;
+}
+.legend input {
+  position: absolute;
+  opacity: 0;
+}
+
+.trigger input[type=checkbox] + i {
+  visibility: visible;
+}
+.trigger input[type=checkbox]:checked + i {
+  visibility: hidden;
 }
 
 /* .icoeur2{
@@ -184,30 +197,33 @@ footer img {
   margin: -15px 0;
 }
 
-.header-menu {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-.header-menu a {
+.back {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  text-decoration: none;
-  color: black;
 }
-.header-menu a img {
-  margin-left: auto;
-  margin-right: auto;
+.back img {
   width: 140px;
   height: 40px;
 }
-.header-menu i {
+.back i {
   margin-left: 20px;
   width: 30px;
   height: 30px;
   font-size: 20px;
+  color: black;
+}
+
+.back-logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
 .menu-photo {
@@ -240,6 +256,13 @@ footer img {
 .menu-title i {
   margin-right: 20px;
   font-size: 25px;
+  right: 8px;
+  background-color: #F6F6F6;
+  position: absolute;
+}
+.menu-title input {
+  position: absolute;
+  opacity: 0;
 }
 
 .entre {
