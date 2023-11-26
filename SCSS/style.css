@@ -62,6 +62,11 @@ header img {
   flex-direction: column;
   margin: 20px;
 }
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .fonctionnement {
+    margin: 20px 100px;
+  }
+}
 
 .ftn-btn {
   display: flex;
@@ -112,8 +117,8 @@ header img {
   width: 80px;
   height: 30px;
   position: absolute;
-  top: 28px;
-  right: 28px;
+  top: 15px;
+  right: 15px;
 }
 .nouveau p {
   color: #008766;
@@ -140,6 +145,7 @@ header img {
 }
 .legend p {
   margin-top: -12px;
+  font-weight: 300;
 }
 .legend img {
   width: 22px;
@@ -148,6 +154,9 @@ header img {
 .legend input {
   position: absolute;
   opacity: 0;
+}
+.legend h3 {
+  font-weight: 700;
 }
 
 .trigger input[type=checkbox] + i {
@@ -175,6 +184,11 @@ header img {
   text-decoration: none;
   color: black;
 }
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .restaurant {
+    padding: 20px 100px;
+  }
+}
 
 footer {
   background-color: #353535;
@@ -187,6 +201,11 @@ footer img {
   height: 20px;
   filter: invert(100%);
   margin-bottom: 15px;
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    padding: 20px 100px;
+  }
 }
 
 .footer-row {
@@ -241,7 +260,6 @@ footer img {
   margin-top: -72px;
   position: relative;
 }
-
 .menu-title {
   display: flex;
   flex-direction: row;
@@ -264,9 +282,23 @@ footer img {
   position: absolute;
   opacity: 0;
 }
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .menu-title {
+    justify-content: center;
+    gap: 20px;
+  }
+  .menu-title i {
+    right: 210px;
+  }
+}
 
 .entre {
   margin: 0 30px 50px 30px;
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .entre {
+    margin: 0 90px 50px 90px;
+  }
 }
 
 .underline {
@@ -287,7 +319,7 @@ footer img {
 }
 .title h1 {
   font-family: "Roboto";
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
 }
 
@@ -302,7 +334,7 @@ footer img {
   font-weight: 700;
 }
 .subtitle h3 {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 15px;
 }
 

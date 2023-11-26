@@ -65,6 +65,9 @@ header {
     display: flex;
     flex-direction: column;
     margin: 20px;
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+        margin: 20px 100px;
+    }
 }
 
 .ftn-btn {
@@ -118,8 +121,8 @@ header {
     width: 80px;
     height: 30px;
     position: absolute;
-    top: 28px;
-    right: 28px;
+    top: 15px;
+    right: 15px;
 
     p {
         color: #008766;
@@ -148,6 +151,7 @@ header {
 
     p {
         margin-top: -12px;
+        font-weight: 300;
     }
     img {
         width: 22px;
@@ -156,6 +160,9 @@ header {
     input {
         position: absolute;
         opacity: 0;
+    }
+    h3 {
+        font-weight: 700;
     }
 }
 
@@ -195,6 +202,9 @@ header {
         text-decoration: none;
         color: black;
     }
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+        padding: 20px 100px;
+    }
 }
 
 footer {
@@ -208,6 +218,9 @@ footer {
         height: 20px;
         filter: invert(100%);
         margin-bottom: 15px;
+    }
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+        padding: 20px 100px;
     }
 }
 
@@ -266,6 +279,10 @@ footer {
     border-radius: 30px 30px 0 0;
     margin-top: -72px;
     position: relative;
+
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+        
+    }
 }
 
 .menu-title {
@@ -290,10 +307,22 @@ footer {
         position: absolute;
         opacity: 0;
     }
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+        justify-content: center;
+        gap: 20px;
+
+        i {
+            right: 210px;
+        }
+    }
 }
 
 .entre {
     margin: 0 30px 50px 30px;
+
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+        margin: 0 90px 50px 90px;
+    }
 }
 
 .underline {
@@ -314,7 +343,7 @@ footer {
 
     h1 {
         font-family: 'Roboto';
-        font-weight: 700;
+        font-weight: 500;
         font-size: 18px;
     }
 }
@@ -332,7 +361,7 @@ footer {
     }
 
     h3 {
-        font-weight: 100;
+        font-weight: 300;
         font-size: 15px;
     }
 }
@@ -353,5 +382,12 @@ footer {
         font-size: 16px;
         border-style: none;
         color: white;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        // margin: 0 40px;
+        // background-color: red;
     }
 }
