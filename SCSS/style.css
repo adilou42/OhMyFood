@@ -67,7 +67,6 @@ header img {
     margin: 20px 100px;
   }
 }
-
 .ftn-btn {
   display: flex;
   flex-direction: row;
@@ -79,6 +78,13 @@ header img {
   border-radius: 20px;
   padding: 5px 0;
   margin-bottom: 20px;
+}
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .desktop-row {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
 }
 
 .ftn-btn:hover i {
@@ -110,6 +116,11 @@ header img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 25px 25px 0 0;
+}
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .card {
+    width: 400px;
+  }
 }
 
 .nouveau {
@@ -190,6 +201,15 @@ header img {
   }
 }
 
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .restaurant-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -207,6 +227,13 @@ footer img {
     padding: 20px 100px;
   }
 }
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
 
 .footer-row {
   display: flex;
@@ -214,6 +241,11 @@ footer img {
   align-items: center;
   gap: 10px;
   margin: -15px 0;
+}
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .footer-row {
+    margin: 0;
+  }
 }
 
 .back {
