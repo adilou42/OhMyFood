@@ -62,7 +62,7 @@ header img {
   flex-direction: column;
   margin: 20px;
 }
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1440px) {
   .fonctionnement {
     margin: 20px 100px;
   }
@@ -195,7 +195,7 @@ header img {
   text-decoration: none;
   color: black;
 }
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1440px) {
   .restaurant {
     padding: 20px 100px;
   }
@@ -222,7 +222,7 @@ footer img {
   filter: invert(100%);
   margin-bottom: 15px;
 }
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1440px) {
   footer {
     padding: 20px 100px;
   }
@@ -232,6 +232,11 @@ footer img {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    gap: 50px;
+  }
+  footer img {
+    margin-bottom: -10px;
+    margin-right: -50px;
   }
 }
 
@@ -243,8 +248,11 @@ footer img {
   margin: -15px 0;
 }
 @media all and (min-width: 1024px) and (max-width: 1440px) {
-  .footer-row {
-    margin: 0;
+  .footer-desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: -16px;
   }
 }
 
@@ -292,6 +300,13 @@ footer img {
   margin-top: -72px;
   position: relative;
 }
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .menu {
+    margin-left: 128px;
+    width: 80%;
+  }
+}
+
 .menu-title {
   display: flex;
   flex-direction: row;
@@ -314,13 +329,18 @@ footer img {
   position: absolute;
   opacity: 0;
 }
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1440px) {
   .menu-title {
     justify-content: center;
     gap: 20px;
   }
   .menu-title i {
     right: 210px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1440px) and (min-width: 1024px) and (max-width: 1440px) {
+  .menu-title i {
+    right: 232px;
   }
 }
 
