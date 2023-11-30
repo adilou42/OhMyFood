@@ -58,7 +58,6 @@ header {
 .info button:hover {
     font-size: 15.2px;
     opacity: 80%;
-
   }
 
 .fonctionnement {
@@ -123,6 +122,8 @@ header {
     background-color: #FFFFFF;
     border-radius: 25px;
     position: relative;
+    margin-bottom: 10px;
+
 
     img {
         width: 100%;
@@ -131,7 +132,9 @@ header {
         border-radius: 25px 25px 0 0;
     }
     @media all and (min-width: 1024px) and (max-width: 1440px) {
-        width: 400px;
+        width: 45%;
+        margin-right: 41px;
+        margin-bottom: 40px;
     }
 
 }
@@ -232,7 +235,6 @@ header {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
     }
 }
 
@@ -367,10 +369,11 @@ footer {
         gap: 20px;
 
         i {
-            right: 210px;
-            @media all and (min-width: 1024px) and (max-width: 1440px) {
-                right: 232px;
-            }
+            position: relative;
+            margin-right: -37px;
+            // @media all and (min-width: 1024px) and (max-width: 1440px) {
+            //     right: 232px;
+            // }
         }
     }
 }
@@ -440,7 +443,12 @@ footer {
         font-size: 16px;
         border-style: none;
         color: white;
+        transition: opacity 1s;
     }
+}
+
+.btn-order button:hover {
+    opacity: 80%;
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {

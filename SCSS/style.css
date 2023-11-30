@@ -109,6 +109,7 @@ header img {
   background-color: #FFFFFF;
   border-radius: 25px;
   position: relative;
+  margin-bottom: 10px;
 }
 .card img {
   width: 100%;
@@ -119,7 +120,9 @@ header img {
 }
 @media all and (min-width: 1024px) and (max-width: 1440px) {
   .card {
-    width: 400px;
+    width: 45%;
+    margin-right: 41px;
+    margin-bottom: 40px;
   }
 }
 
@@ -206,7 +209,6 @@ header img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
   }
 }
 
@@ -335,12 +337,8 @@ footer img {
     gap: 20px;
   }
   .menu-title i {
-    right: 210px;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 1440px) and (min-width: 1024px) and (max-width: 1440px) {
-  .menu-title i {
-    right: 232px;
+    position: relative;
+    margin-right: -37px;
   }
 }
 
@@ -407,4 +405,9 @@ footer img {
   font-size: 16px;
   border-style: none;
   color: white;
+  transition: opacity 1s;
+}
+
+.btn-order button:hover {
+  opacity: 80%;
 }/*# sourceMappingURL=style.css.map */
