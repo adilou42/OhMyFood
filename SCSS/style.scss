@@ -244,6 +244,11 @@ footer {
     padding: 20px;
     font-size: smaller;
 
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
     img {
         width: 100px;
         height: 20px;
@@ -449,11 +454,4 @@ footer {
 
 .btn-order button:hover {
     opacity: 80%;
-}
-
-@media all and (min-width: 768px) and (max-width: 1024px) {
-    body {
-        // margin: 0 40px;
-        // background-color: red;
-    }
 }

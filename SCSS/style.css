@@ -218,6 +218,10 @@ footer {
   padding: 20px;
   font-size: smaller;
 }
+footer a {
+  color: white;
+  text-decoration: none;
+}
 footer img {
   width: 100px;
   height: 20px;
