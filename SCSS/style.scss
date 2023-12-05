@@ -2,19 +2,23 @@ body {
     padding: 0;
     margin: 0;
 	font-family: Roboto, Arial, Helvetica, sans-serif;
-    position: relative;
-    // animation: fadeOut 3s step-end;
+    
+}
 
-    opacity: 0.1;
+.body {
+    position: relative;
+    animation: fadeOut 2s step-end;
+
     @keyframes fadeOut {
         0% {
-            opacity: 0.1;
+            opacity: 0.4;
         }
         100% {
             opacity: 1;
         }
     }
 }
+
 
 h3 {
     font-weight: 300;
@@ -478,9 +482,11 @@ footer {
     box-sizing: border-box;
     position: absolute;
     margin-left: 47%;
+    padding: 46px;
+
 
     animation: rotation 1s linear infinite, fadeOutLoader 0s forwards;
-    animation-delay: 0s, 5s;
+    animation-delay: 0s, 2s;
 
     @keyframes rotation {
         0% {
@@ -491,12 +497,26 @@ footer {
         } 
     }
 
-    // @keyframes fadeOutLoader {
-    //     0% {
-    //         opacity: 1;
-    //     }
-    //     100% {
-    //         opacity: 0;
-    //     }
-    // }
+    @keyframes fadeOutLoader {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}
+
+.body-resto {
+    animation: slideDown 2s ease-out;
+
+    @keyframes slideDown {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(0%);
+        }
+    }
+    
 }
