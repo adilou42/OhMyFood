@@ -398,17 +398,18 @@ footer img {
 .subtitle {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: -25px;
   margin-bottom: -7px;
 }
 .subtitle p {
   font-weight: 700;
-  margin-left: 200px;
+  margin-right: 10px;
 }
 .subtitle h3 {
   font-weight: 300;
   font-size: 15px;
+  margin-right: auto;
 }
 
 .btn-order {
@@ -474,7 +475,15 @@ footer img {
 }
 
 .title:hover .subtitle .icon-div {
-  width: 60px;
+  animation: increaseWidth 0.1s linear forwards;
+}
+@keyframes increaseWidth {
+  0% {
+    width: 16px;
+  }
+  100% {
+    width: 56px;
+  }
 }
 
 .title:hover .subtitle .icon-div .icon-check {
