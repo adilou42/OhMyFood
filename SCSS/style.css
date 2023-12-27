@@ -1,3 +1,7 @@
+.btn-order button:hover {
+  opacity: 80%;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -17,10 +21,6 @@ body {
   }
 }
 
-h3 {
-  font-weight: 300;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -31,6 +31,10 @@ header img {
   height: 44px;
   margin-bottom: 15px;
   margin-top: 15px;
+}
+
+h3 {
+  font-weight: 300;
 }
 
 .location {
@@ -432,10 +436,6 @@ footer img {
   transition: opacity 1s;
 }
 
-.btn-order button:hover {
-  opacity: 80%;
-}
-
 .loader {
   width: 48px;
   height: 48px;
@@ -520,4 +520,12 @@ input[type=checkbox]:checked + i {
 
 .title, .entre-title, .underline {
   animation: slideDown 3s ease-out;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

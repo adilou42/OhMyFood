@@ -1,41 +1,15 @@
-body {
-    padding: 0;
-    margin: 0;
-	font-family: Roboto, Arial, Helvetica, sans-serif;
-    
-}
+@import './components/animation.scss' ;
 
-.body {
-    position: relative;
-    animation: fadeOut 1s step-end;
+@import './layout/body.scss';
+@import './layout/header.scss';
 
-    @keyframes fadeOut {
-        0% {
-            opacity: 0.4;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-}
 
 
 h3 {
     font-weight: 300;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 
-    img {
-        width: 162px;
-        height: 44px;
-        margin-bottom: 15px;
-        margin-top: 15px;
-    }
-}
 
 .location {
     background-color: #EAEAEA;
@@ -477,9 +451,7 @@ footer {
     }
 }
 
-.btn-order button:hover {
-    opacity: 80%;
-}
+
 
 .loader {
     width: 48px;
@@ -523,6 +495,7 @@ footer {
 
 .title:hover .subtitle .icon-div {
     animation: increaseWidth 0.1s linear forwards;
+    
     @keyframes increaseWidth {
         0% {
             width: 16px;
@@ -573,14 +546,14 @@ visibility: hidden;
 
 .title, .entre-title, .underline  {
     animation: slideDown 3s ease-out;
-    // @keyframes slideDown {
-    //     0% {
-    //         opacity: 0;
-    //     }
-    //     100% {
-    //         opacity: 1;
-    //     }
-    // }
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 
     // @keyframes slideDown {
     //     0% {
