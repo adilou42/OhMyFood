@@ -1,0 +1,124 @@
+.btn-order button:hover {
+    opacity: 80%;
+}
+
+.info button:hover {
+    font-size: 15.2px;
+    opacity: 80%;
+}
+
+.ftn-btn:hover {
+    i {
+        color: #9356DC;
+    }
+}
+
+.trigger {
+    
+    // Hide content via default
+    input[type="checkbox"] + i {
+        visibility: visible;
+    }
+    input[type="checkbox"]:checked + i {
+    visibility: hidden;
+  }
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #9356DC;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: -11%;
+    padding: 46px;
+
+    @media all and (min-width: 768px) and (max-width: 1440px) {
+        margin-left: 45%;
+        margin-top: -43px;
+    }
+
+    animation: rotation 1s linear infinite, fadeOutLoader 0s forwards;
+    animation-delay: 0s, 1s;
+
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        } 
+    }
+
+    @keyframes fadeOutLoader {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}
+
+.title:hover .subtitle .icon-div .icon-check {
+    opacity: 1;
+
+}
+
+.title:hover .subtitle .icon-div {
+    animation: increaseWidth 0.1s linear forwards;
+    
+    @keyframes increaseWidth {
+        0% {
+            width: 16px;
+        }
+        100% {
+            width: 56px;
+        }
+    }
+}
+
+.title, .entre-title, .underline  {
+    animation: slideDown 3s ease-out;
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+}
+
+// Hide content via default
+input[type="checkbox"] + i {
+    visibility: visible;
+}
+input[type="checkbox"]:checked + i {
+visibility: hidden;
+}
+
+.icon-check {
+    opacity: 0;
+    color: #99E2D0;
+    margin-top: 30px;
+    background-color: white;
+    width: 16px;
+    margin-left: 20px;
+    padding: 2px;
+    border-radius: 20px;
+}
+
+.icon-div {
+    background-color: #99E2D0;
+    height: 77px;
+    width: 0;
+    margin-top: -32px;
+    margin-right: -9px;
+    border-radius: 0 15px 15px 0;
+}

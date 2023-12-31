@@ -1,0 +1,36 @@
+.btn-order {
+    display: flex;
+    justify-content: center;
+
+    button {
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 25px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(to bottom, #FF79DA, #9356DC);
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+        width: 186px;
+        font-size: 16px;
+        border-style: none;
+        color: white;
+        transition: opacity 1s;
+    }
+}
+
+.ftn-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F6F6F6;
+    gap: 20px;
+    width: 100%;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 5px 0;
+    margin-bottom: 20px;
+
+    @media all and (min-width: 1024px) and (max-width: 1440px) {
+    }
+}
