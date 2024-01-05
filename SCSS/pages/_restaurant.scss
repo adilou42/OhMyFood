@@ -5,7 +5,7 @@
     margin-top: -72px;
     position: relative;
 
-    @media all and (min-width: 1024px) and (max-width: 1440px) {
+    @media all and (min-width: 1024px) and (max-width: 2560px) {
         margin-left: 128px;
         width: 80%;
     }
@@ -33,7 +33,7 @@
         position: absolute;
         opacity: 0;
     }
-    @media all and (min-width: 768px) and (max-width: 1440px) {
+    @media all and (min-width: 768px) and (max-width: 2560px) {
         justify-content: center;
         gap: 20px;
 
@@ -50,9 +50,14 @@
     @media all and (min-width: 768px) and (max-width: 1024px) {
         margin: 0 90px 50px 90px;
     }
-    @media all and (min-width: 1024px) and (max-width: 1440px) {
+    @media all and (min-width: 1024px) and (max-width: 2560px) {
         margin: 0 150px 50px 150px;
     }
+}
+
+.entre-title {
+    font-weight: 300;
+    font-size: 19px;
 }
 
 .underline {
@@ -65,24 +70,26 @@
 
 .title {
     display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    padding: 0px 10px;
-    box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
-    margin-bottom: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+   
 
-    h1 {
+    h3 {
+        margin-top: 10px;
         font-family: 'Roboto';
         font-weight: 500;
         font-size: 18px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
 .subtitle {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    margin-top: -25px; 
+    justify-content: space-between;
+    margin-top: -45px; 
     margin-bottom: -7px;
 
     p {
@@ -90,12 +97,23 @@
         margin-right: 10px;
     }
 
-    h3 {
+    h4 {
         font-weight: 300;
         font-size: 15px;
-        margin-right: auto;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        // margin-right: 19px;
     }
+}
+
+.title-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+    margin-bottom: 10px;
 }

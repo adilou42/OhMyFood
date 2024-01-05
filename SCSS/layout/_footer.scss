@@ -15,11 +15,11 @@ footer {
         filter: invert(100%);
         margin-bottom: 15px;
     }
-    @media all and (min-width: 768px) and (max-width: 1440px) {
+    @media all and (min-width: 768px) and (max-width: 2560px) {
         padding: 20px 100px;
     }
 
-    @media all and (min-width: 1024px) and (max-width: 1440px) {
+    @media all and (min-width: 1024px) and (max-width: 2560px) {
         img {
             margin-bottom: -10px;
             margin-right: -50px;
@@ -33,7 +33,7 @@ footer {
 }
 
 .footer-desktop {
-    @media all and (min-width: 1024px) and (max-width: 1440px) {
+    @media all and (min-width: 1024px) and (max-width: 2560px) {
         display: flex;
         flex-direction: row;
         gap: 20px;

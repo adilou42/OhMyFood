@@ -12,10 +12,11 @@
 }
 
 .trigger input[type=checkbox] + i {
-  visibility: visible;
+  opacity: 1;
+  transition: 1s;
 }
 .trigger input[type=checkbox]:checked + i {
-  visibility: hidden;
+  opacity: 0;
 }
 
 .loader {
@@ -56,11 +57,23 @@
   }
 }
 
-.title:hover .subtitle .icon-div .icon-check {
+.title-column:hover .subtitle p {
+  animation: increaseMargin 0.1s linear forwards;
+}
+@keyframes increaseMargin {
+  0% {
+    margin-right: 10px;
+  }
+  100% {
+    margin-right: 50px;
+  }
+}
+
+.title-column:hover .title .icon-div .icon-check {
   opacity: 1;
 }
 
-.title:hover .subtitle .icon-div {
+.title-column:hover .title .icon-div {
   animation: increaseWidth 0.1s linear forwards;
 }
 @keyframes increaseWidth {
@@ -72,8 +85,8 @@
   }
 }
 
-.title, .entre-title, .underline {
-  animation: slideDown 3s ease-out;
+.appear1 {
+  animation: slideDown 1s ease-out;
 }
 @keyframes slideDown {
   0% {
@@ -84,12 +97,28 @@
   }
 }
 
-input[type=checkbox] + i {
-  visibility: visible;
+.appear2 {
+  animation: slideDown 2s ease-out;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-input[type=checkbox]:checked + i {
-  visibility: hidden;
+.appear3 {
+  animation: slideDown 3s ease-out;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .icon-check {
@@ -105,9 +134,8 @@ input[type=checkbox]:checked + i {
 
 .icon-div {
   background-color: #99E2D0;
-  height: 77px;
-  width: 0;
-  margin-top: -32px;
+  height: 70px;
+  width: 0px;
   margin-right: -9px;
   border-radius: 0 15px 15px 0;
 }
@@ -232,12 +260,12 @@ footer img {
   filter: invert(100%);
   margin-bottom: 15px;
 }
-@media all and (min-width: 768px) and (max-width: 1440px) {
+@media all and (min-width: 768px) and (max-width: 2560px) {
   footer {
     padding: 20px 100px;
   }
 }
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media all and (min-width: 1024px) and (max-width: 2560px) {
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -250,7 +278,7 @@ footer img {
   }
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media all and (min-width: 1024px) and (max-width: 2560px) {
   .footer-desktop {
     display: flex;
     flex-direction: row;
@@ -304,13 +332,13 @@ footer img {
   flex-direction: column;
   margin: 20px;
 }
-@media all and (min-width: 768px) and (max-width: 1440px) {
+@media all and (min-width: 768px) and (max-width: 2560px) {
   .fonctionnement {
     margin: 20px 100px;
   }
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media all and (min-width: 1024px) and (max-width: 2560px) {
   .desktop-row {
     display: flex;
     flex-direction: row;
@@ -345,7 +373,7 @@ footer img {
      object-fit: cover;
   border-radius: 25px 25px 0 0;
 }
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media all and (min-width: 1024px) and (max-width: 2560px) {
   .card {
     width: 45%;
     margin-right: 41px;
@@ -411,13 +439,13 @@ footer img {
   text-decoration: none;
   color: black;
 }
-@media all and (min-width: 768px) and (max-width: 1440px) {
+@media all and (min-width: 768px) and (max-width: 2560px) {
   .restaurant {
     padding: 20px 100px;
   }
 }
 
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media all and (min-width: 1024px) and (max-width: 2560px) {
   .restaurant-row {
     display: flex;
     flex-direction: row;
@@ -432,7 +460,7 @@ footer img {
   margin-top: -72px;
   position: relative;
 }
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media all and (min-width: 1024px) and (max-width: 2560px) {
   .menu {
     margin-left: 128px;
     width: 80%;
@@ -461,7 +489,7 @@ footer img {
   position: absolute;
   opacity: 0;
 }
-@media all and (min-width: 768px) and (max-width: 1440px) {
+@media all and (min-width: 768px) and (max-width: 2560px) {
   .menu-title {
     justify-content: center;
     gap: 20px;
@@ -480,10 +508,15 @@ footer img {
     margin: 0 90px 50px 90px;
   }
 }
-@media all and (min-width: 1024px) and (max-width: 1440px) {
+@media all and (min-width: 1024px) and (max-width: 2560px) {
   .entre {
     margin: 0 150px 50px 150px;
   }
+}
+
+.entre-title {
+  font-weight: 300;
+  font-size: 19px;
 }
 
 .underline {
@@ -496,34 +529,45 @@ footer img {
 
 .title {
   display: flex;
-  flex-direction: column;
-  border-radius: 15px;
-  padding: 0px 10px;
-  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.title h1 {
+.title h3 {
+  margin-top: 10px;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .subtitle {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  margin-top: -25px;
+  justify-content: space-between;
+  margin-top: -45px;
   margin-bottom: -7px;
 }
 .subtitle p {
   font-weight: 700;
   margin-right: 10px;
 }
-.subtitle h3 {
+.subtitle h4 {
   font-weight: 300;
   font-size: 15px;
-  margin-right: auto;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.title-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70px;
+  border-radius: 15px;
+  padding: 0px 10px;
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -14,13 +14,13 @@
 }
 
 .trigger {
-    
     // Hide content via default
     input[type="checkbox"] + i {
-        visibility: visible;
+        opacity: 1;
+        transition: 1s;
     }
     input[type="checkbox"]:checked + i {
-    visibility: hidden;
+        opacity: 0;
   }
 }
 
@@ -64,12 +64,25 @@
     }
 }
 
-.title:hover .subtitle .icon-div .icon-check {
+.title-column:hover .subtitle p {
+    animation : increaseMargin 0.1s linear forwards;
+
+    @keyframes increaseMargin {
+        0% {
+            margin-right: 10px;
+        }
+        100% {
+            margin-right: 50px;
+        }
+    }
+}
+
+.title-column:hover .title .icon-div .icon-check {
     opacity: 1;
 
 }
 
-.title:hover .subtitle .icon-div {
+.title-column:hover .title .icon-div {
     animation: increaseWidth 0.1s linear forwards;
     
     @keyframes increaseWidth {
@@ -82,8 +95,8 @@
     }
 }
 
-.title, .entre-title, .underline  {
-    animation: slideDown 3s ease-out;
+.appear1 {
+    animation: slideDown 1s ease-out;
     @keyframes slideDown {
         0% {
             opacity: 0;
@@ -95,12 +108,30 @@
 
 }
 
-// Hide content via default
-input[type="checkbox"] + i {
-    visibility: visible;
+.appear2 {
+    animation: slideDown 2s ease-out;
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
 }
-input[type="checkbox"]:checked + i {
-visibility: hidden;
+
+.appear3 {
+    animation: slideDown 3s ease-out;
+    @keyframes slideDown {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
 }
 
 .icon-check {
@@ -116,9 +147,9 @@ visibility: hidden;
 
 .icon-div {
     background-color: #99E2D0;
-    height: 77px;
-    width: 0;
-    margin-top: -32px;
+    height: 70px;
+    width: 0px;
+    // margin-top: -32px;
     margin-right: -9px;
     border-radius: 0 15px 15px 0;
 }
