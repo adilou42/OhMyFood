@@ -13,15 +13,40 @@
     }
 }
 
+
+
+
+.fa-heart{
+
+    transition: opacity 1s;
+}
+
+.fa-heart:hover {
+    opacity: 0;
+}
+
 .trigger {
+    
+    // animation: none !important;
+    // animation: 3s;
+    
+    
+    // transition-duration: 2s;
+    // opacity: 0;
+    
+    // ::-webkit-resizer {
+    //     transition: none !important;
+
+    // }
+
+    
     // Hide content via default
-    input[type="checkbox"] + i {
-        opacity: 1;
-        transition: 1s;
-    }
-    input[type="checkbox"]:checked + i {
-        opacity: 0;
-  }
+//     input[type="checkbox"] + i {
+//         opacity: 1;
+//     }
+//     input[type="checkbox"]:checked + i {
+//         opacity: 0;
+//   }
 }
 
 .loader {

@@ -11,11 +11,11 @@
   color: #9356DC;
 }
 
-.trigger input[type=checkbox] + i {
-  opacity: 1;
-  transition: 1s;
+.fa-heart {
+  transition: opacity 1s;
 }
-.trigger input[type=checkbox]:checked + i {
+
+.fa-heart:hover {
   opacity: 0;
 }
 
@@ -260,12 +260,12 @@ footer img {
   filter: invert(100%);
   margin-bottom: 15px;
 }
-@media all and (min-width: 768px) and (max-width: 2560px) {
+@media all and (min-width: 768px) {
   footer {
     padding: 20px 100px;
   }
 }
-@media all and (min-width: 1024px) and (max-width: 2560px) {
+@media all and (min-width: 1024px) {
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -278,7 +278,7 @@ footer img {
   }
 }
 
-@media all and (min-width: 1024px) and (max-width: 2560px) {
+@media all and (min-width: 1024px) {
   .footer-desktop {
     display: flex;
     flex-direction: row;
@@ -332,13 +332,13 @@ footer img {
   flex-direction: column;
   margin: 20px;
 }
-@media all and (min-width: 768px) and (max-width: 2560px) {
+@media all and (min-width: 768px) {
   .fonctionnement {
     margin: 20px 100px;
   }
 }
 
-@media all and (min-width: 1024px) and (max-width: 2560px) {
+@media all and (min-width: 1024px) {
   .desktop-row {
     display: flex;
     flex-direction: row;
@@ -373,7 +373,7 @@ footer img {
      object-fit: cover;
   border-radius: 25px 25px 0 0;
 }
-@media all and (min-width: 1024px) and (max-width: 2560px) {
+@media all and (min-width: 1024px) {
   .card {
     width: 45%;
     margin-right: 41px;
@@ -439,13 +439,13 @@ footer img {
   text-decoration: none;
   color: black;
 }
-@media all and (min-width: 768px) and (max-width: 2560px) {
+@media all and (min-width: 768px) {
   .restaurant {
     padding: 20px 100px;
   }
 }
 
-@media all and (min-width: 1024px) and (max-width: 2560px) {
+@media all and (min-width: 1024px) {
   .restaurant-row {
     display: flex;
     flex-direction: row;
@@ -460,7 +460,7 @@ footer img {
   margin-top: -72px;
   position: relative;
 }
-@media all and (min-width: 1024px) and (max-width: 2560px) {
+@media all and (min-width: 1024px) {
   .menu {
     margin-left: 128px;
     width: 80%;
@@ -489,7 +489,7 @@ footer img {
   position: absolute;
   opacity: 0;
 }
-@media all and (min-width: 768px) and (max-width: 2560px) {
+@media all and (min-width: 768px) {
   .menu-title {
     justify-content: center;
     gap: 20px;
@@ -508,7 +508,7 @@ footer img {
     margin: 0 90px 50px 90px;
   }
 }
-@media all and (min-width: 1024px) and (max-width: 2560px) {
+@media all and (min-width: 1024px) {
   .entre {
     margin: 0 150px 50px 150px;
   }
